@@ -1,1 +1,28 @@
-# AppSecDay Melbourne Conference 2017
+# OWASP AppSec AU 2017
+
+## The not so scary security conference
+
+ The juiciest parts of an application security conference are always the new and interesting ways in our precious data can be exposed by vulnerabilities in our code, the frameworks on which we've built our code, or the infrastructure on which our code runs. Those responsible for delivering software listen intently, asking questions like 'do we do that?', 'can that happen to us?' and more importantly, 'what will it take to fix that?'. OWASP AppSec AU 2017 provided plenty of interesting tips and tricks for liberating data from vulnerable applications, and fortunately plenty of advice on how to keep the bad guys out.
+
+Now in its second year, [OWASP AppSec AU](https://appsecday.com/) is a passion project run by [Julian Berton](https://www.linkedin.com/in/julianberton/) and [Sergi B](https://www.linkedin.com/in/sergb/) consisting of two days of workshops followed by a one day mini conference. Running from the 7th to the 9th of September, this years event was held on Queen Street, in the heart of the Melbourne CBD.
+
+I attended the mini conference on Saturday as a refresher on my rusty app sec knowledge, to get to know a few people in the Melbourne community and to check out [Troy Hunts](https://www.linkedin.com/in/troyhunt/) always entertaining views on the world of security.
+
+To kick things off [Daniel Grzelak](https://www.linkedin.com/in/danielgrzelak), head of security at Atlassian, provided an in depth look into why good hygiene of your AWS accounts is critical to protecting your account from a wide range of enumeration attacks and provided [a number of handy scripts](https://github.com/dagrz/aws_pwn) to help illustrate his point. Third party integrations, which assume a role within your account can serve as a backdoor to your account. Once in, even in a read only role, hackers will often find API keys and secrets stored in Cloud Formation scripts and EC2 user data. To prevent detection, a few clever tricks using Lamdba functions were demonstrated, allowing intruders to spawn additional backdoor accounts, and mask nefarious behavior from Cloud Trail logs.
+
+[Sam 'Frenchie' Stewart](https://www.linkedin.com/in/sampstewart/), lead infrastructure engineer at CultureAmp gave us a crash course in [Zero Trust Networks](http://shop.oreilly.com/product/0636920052265.do) based on the recent O'Rielly publication. Zero trust networks are a move away from traditional perimeter based networks, where entire segments of a network are trusted, to authorising and authenticating all interactions between actors in a system where policies are provided by a trust engine. Security groups within AWS can in some ways serve as a tool to implement a zero trust network. Insightful talk and an equally impressive beard!
+
+What app sec conference wouldn't be complete without mention of XSS (cross site scripting)? [Felix Shi](https://www.linkedin.com/in/felix-shi-bb700710/), product security specialist at Xero asked the one question everyone still has on XSS, 'why is this still a problem?'. Fortunately he was able to offer a solution, content security policy, or CSP. CSP essentially turns the default loading and execution of JavaScript (and any external assets for that matter) from an 'allow all' model to a 'deny all' model. Allowing developers to explicitly specify which domains JavaScript files can be loaded from, and allows execution of inline code to be disabled. There are a few drawbacks, browser support being one, not to mention that facts that blindly enabling CSP will break many sites out there, but it feels like a big step in the right direction of solving XSS once and for all.
+
+After lunch, [Andrew Bienert](https://www.linkedin.com/in/andrewbienert/), security architect at Seek restored our faith in AWS by explaining how Seek 'wrangle security' across over 100 AWS accounts. DevSecOps style automated checks, run on Lamdba, continuously run across their accounts help to ensure best practice configuration of AWS resources from a security perspective.
+
+[Jen Zajac](https://www.linkedin.com/in/jenzajac/), lead frontend developer at Catalyst, went into CSP in a bit more depth, discussed client side input validation and the pros and cons of current client side storage mechanisms. In what was my favorite talk of the day, Jen also showed us how the ```target="_blank"``` ~~bug~~ feature in all browsers can be used to implement a very simple phishing attack. [Read more about it here](https://mathiasbynens.github.io/rel-noopener/).
+
+[Troy Hunt](https://www.linkedin.com/in/troyhunt/) was up last with a very entertaining look what goes on behind the scenes of his highly successful [Have I Been Pwned](https://haveibeenpwned.com/) website. If you haven't yet had the chance to see Troy speak, hunt him down! I think I'll put my hand up next time the Ashley Madison questions comes up just to see the response I get.
+
+The day finished up with an Ask Me Anything panel consisting of [Julian Berton](https://www.linkedin.com/in/julianberton/), [Sergi B](https://www.linkedin.com/in/sergb/), [Pamel P'Shea](https://www.linkedin.com/in/pamelaoshea/) and ???, providing a fun forum to poke fun at recruiters and to hear anecdotes about how those on the panel go about embedding security within the development culture at their respective organisations. Apparently all is takes is snacks!
+
+Sergi and Julian put together an engaging, fun and insightful mini conference that appeals to both security professionals, developers and those who are curious around what's happening in the app sec space. The grassroots nature of the conference made it feel very accessible to newcomers like myself. Great work guys, I might even bring my laptop along next year and have a go at the workshops!
+
+
+
