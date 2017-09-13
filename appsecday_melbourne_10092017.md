@@ -2,7 +2,7 @@
 
 ## The not so scary security conference
 
- The juiciest parts of an application security conference are always the new and interesting ways in our precious data can be exposed by vulnerabilities in our code, the frameworks on which we've built our code, or the infrastructure on which our code runs. Those responsible for delivering software listen intently, asking questions like 'do we do that?', 'can that happen to us?' and more importantly, 'what will it take to fix that?'. OWASP AppSec AU 2017 provided plenty of interesting tips and tricks for liberating data from vulnerable applications, and fortunately plenty of advice on how to keep the bad guys out.
+ The juiciest parts of an application security conference are always the new and interesting ways in our precious data can be exposed by vulnerabilities in our code, the frameworks on which we've built our code, or the infrastructure on which our code runs. Those responsible for delivering software ~~listen~~ intently, asking questions like 'do we do that?', 'can that happen to us?' and more importantly, 'what will it take to fix that?'. OWASP AppSec AU 2017 provided plenty of interesting tips and tricks for liberating data from vulnerable applications, and fortunately plenty of advice on how to keep the bad guys out.
 
 Now in its second year, [OWASP AppSec AU](https://appsecday.com/) is a passion project run by [Julian Berton](https://www.linkedin.com/in/julianberton/) and [Sergi B](https://www.linkedin.com/in/sergb/) consisting of two days of workshops followed by a one day mini conference. Running from the 7th to the 9th of September, this years event was held on Queen Street, in the heart of the Melbourne CBD.
 
